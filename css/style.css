@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+
+html,body{
+	width:100%;
+	height:100vh;
+	margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#particles-js{
+    width: 100%;
+    background-image: url('../images/overview-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5vh;
+    background-position: center; 
+    background-attachment: fixed;
+  }
+
+#particles-js .containe-particle {
+    padding-bottom: 10vh;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #8A8A8A;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #00bcd4;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#particles-js h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#particles-js h4 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.title {
+    margin: 25vh 0;
+    color: #fff;
+}
+
+.more-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.more-element p {   
+    margin-right: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #202020;
+    font-weight: 500;
+}
+
+#artworks img.icon, #projects img.icon {
+    width: 25px;
+}
+
+button.view-more a {
+    font-family: 'Raleway', sans-serif;
+    color:#B4B4B4;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+nav {
+    height: 100px;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top:0;
+}
+
+nav, ul.nav-main {
+    display: flex;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+li {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+}
+
+li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 4px #00bcd4;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+button {
+    border: 2px solid #00bcd4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+img.icon{
+    width: 40px;
+    color: #00bcd4;
+}
+
+button.download {
+    font-size: 16px;
+}
+
+button.download a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#particles-js button:hover:after {
+    transform: scaleX(1);
+}
+
+#particles-js button:after {
+    display:block;
+    content: '';
+    border-bottom: solid 4px #d40063;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+#particles-js h2, #skills h2 , #projects h2, #about h2{
+    padding-bottom: 10vh;
+}
+
+.card {
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #ececec;
+    padding: 10px;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+    box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+    transition: ease-in-out .2s;
+}
+
+
+#artworks .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
+}
+
+#artworks .card:hover, #about .card:hover {
+    box-shadow: none;
+}
+
+#artworks .card:hover:after {
+    transform: scaleX(1);
+}
+
+#artworks .card:after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #00bcd4;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+
+#artworks, #projects {
+    background: #F8F9FD;
+    padding: 10vh 0 5vh 0;
+}
+
+#artworks img , #projects img {
+    width: 100%;
+}
+
+#skills img {
+    width:100%;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+    box-shadow: 0px 0px 12px 3px rgba(230,230,230,1);
+}
+
+#skills ,#about{
+    padding: 10vh 0 5vh 0;
+}
+
+#skills .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+#skills .card {
+    padding: 20px;
+}
+
+#projects .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+}
+
+#about .card {
+    padding: 15px;
+}
+
+#about .accounts-details .card {
+    max-width: 500px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.accounts-details {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img.icon {
+    padding: 5px;
+}
+
+.social-accounts p {
+    color: #202020;
+    font-weight: 600;
+}
+
+footer {
+    background: #F8F9FD;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #B4B4B4;
+    float: left;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Responsive size for tablet */
+@media(max-width: 768px){
+
+    .logo {
+        margin: auto;
+    }
+    ul.nav-main{
+        display: none;
+    }
+    
+    #particles-js h1 , #particles-js h4 {
+        float:none;
+        padding: 10px 0;
+        text-align:center;
+        width:100%;
+    }
+
+    button.download {
+        margin: auto;
+    }
+
+    #projects h2 , .more-element{
+        width: 80%;
+        margin: auto;
+    }
+
+    #artworks .container, #skills .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    #skills .card {
+        margin: 20px 0;
+    }
+
+}
+
+/* Responsive size for mobile  */
+
+@media(max-width:475px){
+    .title {
+        margin: 15vh 0;
+    }
+
+    #artworks .container, #skills .container, #projects .container {
+        display: block;
+    }
+
+    #artworks .card , #projects .card, #about .accounts-details .card{
+        margin: 20px 0;
+    }
+
+    .more-element p {   
+        margin-right: 10px;
+    }
+
+    .accounts-details {
+        display: block;
+    }
+}
