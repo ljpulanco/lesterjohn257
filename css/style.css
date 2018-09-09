@@ -13,6 +13,14 @@ html,body{
     margin: 0 auto;
 }
 
+.background {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
 #particles-js{
     width: 100%;
     background-image: url('../images/overview-background.jpg');
@@ -23,9 +31,10 @@ html,body{
     background-attachment: fixed;
   }
 
-#particles-js .containe-particle {
-    padding-bottom: 10vh;
-}
+ #particles-js .container {
+      position: absolute;
+      padding: 0 10%;
+  }
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
