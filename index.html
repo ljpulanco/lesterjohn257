@@ -36,6 +36,7 @@
                 <button class="download"><a href="files/CV Version 2 2018.pdf" target="_blank">Download CV</a><img class="icon"
                         src="icons/cloud-download-alt-solid.svg" alt=""></button>
             </div>
+            <canvas class="background"> </canvas>
         </div>
 
 
@@ -181,6 +182,15 @@
             <p>Designed and Developed by Lester John Pulanco - 2018</p>
         </div>
     </footer>
+    
+    <script src="js/particles.min.js"></script>
+    <script>
+       var particles = Particles.init({
+	selector: '.background',
+  color: ['#DA0463', '#404B69', '#DBEDF3', '#00bcd4'],
+  maxParticles: '150',
+  sizeVariations: '6'
+});
+   </script>
 </body>
-
 </html>
