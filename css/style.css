@@ -23,11 +23,12 @@ html,body{
 
 #particles-js{
     width: 100%;
-    background-image: url('../images/overview-background.jpg');
+    background: #010B12;
+/*     background-image: url('../images/overview-background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     padding-bottom: 5vh;
-    background-position: center; 
+/*     background-position: center;  */
     background-attachment: fixed;
   }
 
